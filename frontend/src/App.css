@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f8fafc;
+}
+
+body[data-mui-color-scheme="dark"] {
+  background-color: #1a1d24;
+}
+
+.chartjs-tooltip {
+  background: white !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+  padding: 8px 12px !important;
+}
+
+.chartjs-tooltip-key {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+}
+
+.react-grid-item > .react-resizable-handle::after {
+  content: "";
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .react-grid-item > .react-resizable-handle::after {
+  border-right: 2px solid rgba(255, 255, 255, 0.7) !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7) !important;
+}
